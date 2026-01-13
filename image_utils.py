@@ -11,7 +11,6 @@ def load_image(file_path):
 from scipy.signal import convolve2d
 def edge_detection(loaded_img):
   gray_tumor = np.mean(loaded_img, axis=2)
-  plt.imshow(gray_tumor, cmap='gray')
 
   kernelY = np.array([[1, 2, 1],
                       [0, 0, 0],
